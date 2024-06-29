@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    background-color: black;
+    min-height: 200px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+ 
+.logo{
+    display: flex;
+    gap: 2px;
+}
+
+
+.logo .sign{
+    background-color: red;
+    padding: 2px 18px;
+    border-radius: 12px;
+}
+
+.main .header{
+    display: flex;
+}
+.main .header a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    padding:5px 20px;
+    
+}
+
+.header{
+    gap: 10px;
+}
+
+.main .header a:hover{
+    color: blue;
+    background-color: rgb(105, 74, 74);
+}
+
+
+/* MOBILE */
+
+.mbl {
+    
+    display: none;
+ 
+}
+.mbl a{
+    /* display: none; */
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    padding:5px 20px;
+}
+
+.mbl a:hover{
+    color: blue;
+    background-color: rgb(105, 74, 74);
+}
+input{
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+}
+
+.section{
+    background-color:black;
+    border: 5px solid red;
+    border-left: none;
+    border-right: none;
+    border-top:silver;
+    margin-top: 3px;
+}
+.section .logo{
+    color: #fff;
+    padding: 3px 9px;
+}
+
+.section .mid{
+    display: flex;
+    justify-content: space-between;
+    /* min-height: 80vh; */
+    color: goldenrod;
+    padding-top:380px;
+}
+.mid .time{
+    color: #fff;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+.mid .logi{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.mid .text{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.last{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 5px 6px;
+    line-height: 24px;
+}
+.last h4{
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:630px) {
+    .main .header{
+       display:none ;
+    }
+
+    .mbl{
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+        gap: 10px;
+        position: absolute;
+        top: -180px;
+        right: 80px;
+       
+}
+.mbl a{
+    color: #fff;
+} 
+  
+input{
+    display: block;
+}
+
+input:checked~.mbl{
+    position: absolute;
+    top: 13px;
+    right: 80px;
+    transition: all 0.5s linear;
+}
+ 
+
+}
